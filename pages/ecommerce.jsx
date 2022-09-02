@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import cryptoImg from "../public/assets/projects/crypto.jpg";
+import gearstoreImg from "../public/assets/projects/gearstore.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
@@ -13,12 +13,12 @@ const crypto = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={cryptoImg}
+          src={gearstoreImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Crypto App</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h2 className="py-2">Gear Store</h2>
+          <h3>Next JS / Sanity / Stripe</h3>
         </div>
       </div>
 
@@ -27,34 +27,35 @@ const crypto = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            I built this app to demonstrate knowledge working in React JS and
-            accessing API endpoints. This app was built using React JS and is
-            hosted on Firebase. This application supports user authentication
-            using firebase. Users are able to create a new account using their
-            email address and can then sign in to save coins to a user specific
-            list. This is made possble by creating a firestore cloud storage
-            database at the time of user registration. Another feature of this
-            application is dynamic routing through the &quot;React Router
-            DOM&quot; package. This application was built using the Coin Gecko
-            API.
+            I built this app to demonstrate knowledge in responsive web
+            developement integrated with back end management and real payment.
+            This e-commerce application will include modern design and
+            animations, the ability to add and edit products on the go using a
+            Sanity, all advanced cart, and checkout functionalities, and most
+            importantly, the complete integration with Stripe so that you can
+            cover real payments.
           </p>
           <p className="py-2 font-semibold">
             What I accomplished from this project:
           </p>
-          <p>
-            - Advanced authentication and theme management by React Context
-            <br />- User registration and authentication powered by firebase
-            <br />- Coin listing and storage using firebase cloud database
+          <p className="py-2">
+            - Advanced React folder and file structure, hooks, and refs <br />-
+            Advanced State Management of the entire application using React
+            Context API <br />- Next.js file-based routing and data using
+            server-side rendering and static generation <br />- Integrated
+            Stripe to manage payments, products, shipping rates, and the entire
+            checkout process <br />- Managed the entire backend content of this
+            app using Sanity
           </p>
           <a
-            href="https://github.com/juntaodev/cryptobase.git/"
+            href="https://github.com/juntaodev/gear-ecommerce-app.git"
             target="_blank"
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </a>
           <a
-            href="https://cryptobase-juntaodev.vercel.app/"
+            href="https://gear-ecommerce-app-juntaodev.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -66,22 +67,20 @@ const crypto = () => {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1 ">
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React
+                <RiRadioButtonFill className="pr-1" /> Next JS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Tailwind
+                <RiRadioButtonFill className="pr-1" /> CSS
+              </p>
+
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> React Context API
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Javascript
+                <RiRadioButtonFill className="pr-1" /> Stripe
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Firebase
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Coin Gecko API
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Routes
+                <RiRadioButtonFill className="pr-1" /> Sanity
               </p>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import cryptoImg from "../public/assets/projects/crypto.jpg";
+import bugtrackerImg from "../public/assets/projects/bugtracker.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
@@ -13,12 +13,12 @@ const crypto = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={cryptoImg}
+          src={bugtrackerImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Crypto App</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h2 className="py-2">Bug Tracker</h2>
+          <h3>React JS / React Testing Library / Jest </h3>
         </div>
       </div>
 
@@ -27,37 +27,18 @@ const crypto = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            I built this app to demonstrate knowledge working in React JS and
-            accessing API endpoints. This app was built using React JS and is
-            hosted on Firebase. This application supports user authentication
-            using firebase. Users are able to create a new account using their
-            email address and can then sign in to save coins to a user specific
-            list. This is made possble by creating a firestore cloud storage
-            database at the time of user registration. Another feature of this
-            application is dynamic routing through the &quot;React Router
-            DOM&quot; package. This application was built using the Coin Gecko
-            API.
+            I built this app to demonstrate knowledge about testing React apps
+            and using the React testing library. <br /> (Only locally operated)
           </p>
-          <p className="py-2 font-semibold">
-            What I accomplished from this project:
-          </p>
-          <p>
-            - Advanced authentication and theme management by React Context
-            <br />- User registration and authentication powered by firebase
-            <br />- Coin listing and storage using firebase cloud database
-          </p>
+
           <a
-            href="https://github.com/juntaodev/cryptobase.git/"
+            href="https://github.com/juntaodev/bug-tracker.git"
             target="_blank"
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </a>
-          <a
-            href="https://cryptobase-juntaodev.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a target="_blank" rel="noreferrer">
             <button className="px-8 py-2 mt-4">Demo</button>
           </a>
         </div>
@@ -69,19 +50,13 @@ const crypto = () => {
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Tailwind
+                <RiRadioButtonFill className="pr-1" /> React Testing Library
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Jest
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Javascript
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Firebase
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Coin Gecko API
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Routes
               </p>
             </div>
           </div>
