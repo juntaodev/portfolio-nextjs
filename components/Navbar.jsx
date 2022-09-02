@@ -1,15 +1,33 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import navLogo from "../public/assets/navLogo.png";
 import logo from "../public/assets/logo.png";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsFileText } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (
+      router.asPath === "/ecommerce" ||
+      router.asPath === "/crypto" ||
+      router.asPath === "/twitch" ||
+      router.asPath === "/bugtracker"
+    ) {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -28,56 +46,64 @@ const Navbar = () => {
 
   return (
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16 ease-in duration-150">
         <Link href="/">
-          <Image
-            src={logo}
-            alt="/"
-            width={125}
-            height={125}
-            className="cursor-pointer hover:scale-125 ease-in duration-300"
-          />
+          <a>
+            <Image
+              src={logo}
+              alt="/"
+              width={125}
+              height={125}
+              className="cursor-pointer hover:scale-125 ease-in-out duration-300"
+            />
+          </a>
         </Link>
-        {/* <div className="hidden md:flex ">
-          <p>
-            <p className="text-base mx-5">
-              juntaoliudev@gmail.com || (647)-512-3762
-            </p>
-          </p>
-        </div> */}
+
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-lg font-medium uppercase hover:text-[#618A6A] hover:scale-110 ease-in-out duration-300">
                 Home
               </li>
             </Link>
-            <Link href="/#projects">
+            <Link href="/#projects" scroll={false}>
               <li className="ml-10 text-lg font-medium uppercase hover:text-[#618A6A] hover:scale-110 ease-in-out duration-300">
                 Projects
               </li>
             </Link>
-            <Link href="/#about">
+            <Link href="/#about" scroll={false}>
               <li className="ml-10 text-lg font-medium uppercase hover:text-[#618A6A] hover:scale-110 ease-in-out duration-300">
                 About
               </li>
             </Link>
-            {/* <Link href="/#skills">
-              <li className="ml-10 text-lg font-medium uppercase hover:text-[#618A6A]">Skills</li>
-            </Link> */}
-            <Link href="/#contact">
-              <li className="mx-10 text-lg font-medium uppercase hover:text-[#618A6A] hover:scale-110 ease-in-out duration-300">
+
+            <Link href="/#contact" scroll={false}>
+              <li className="ml-10 text-lg font-medium uppercase hover:text-[#618A6A] hover:scale-110 ease-in-out duration-300">
                 Contact
               </li>
             </Link>
+
+            <a
+              href="https://docs.google.com/document/d/1nMnzGJxx3eouOPPIpxvcE_NSONtf2Xwg/edit?usp=sharing&ouid=109590801400286731820&rtpof=true&sd=true"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <li className="mx-10 text-lg font-medium uppercase hover:text-[#618A6A] hover:scale-110 ease-in-out duration-300">
+                Resume
+              </li>
+            </a>
           </ul>
-          <div onClick={handleNav} className="md:hidden cursor-pointer">
+          <div
+            onClick={handleNav}
+            className="md:hidden cursor-pointer hover:scale-125  ease-in-out duration-300"
+          >
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -99,17 +125,19 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <Image
-                  src={logo}
-                  alt="/"
-                  width={125}
-                  height={125}
-                  className="cursor-pointer hover:scale-125 ease-in duration-300"
-                />
+                <a>
+                  <Image
+                    src={logo}
+                    alt="/"
+                    width={125}
+                    height={125}
+                    className="cursor-pointer hover:scale-125 ease-in duration-300"
+                  />
+                </a>
               </Link>
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-4000 p-3 cursor-pointer"
+                className="rounded-full shadow-lg shadow-gray-4000 p-3 cursor-pointer hover:bg-[#abc4b0] hover:rotate-90 ease-in duration-200"
               >
                 <AiOutlineClose size={25} />
               </div>
@@ -145,9 +173,7 @@ const Navbar = () => {
                     About
                   </li>
                 </Link>
-                {/* <Link href="/#skills">
-                  <li className="py-4 text-sm hover:text-[#618A6A]">Skills</li>
-                </Link> */}
+
                 <Link href="/#contact">
                   <li
                     onClick={() => setNav(false)}
@@ -167,17 +193,17 @@ const Navbar = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 hover:bg-[#abc4b0] ease-in duration-300">
                       <FaLinkedin />
                     </div>
                   </a>
 
                   <a
-                    href="https://www.linkedin.com/in/juntao-liu-710528247/"
+                    href="https://github.com/juntaodev"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 hover:bg-[#abc4b0] ease-in duration-300">
                       <FaGithub />
                     </div>
                   </a>
@@ -185,7 +211,7 @@ const Navbar = () => {
                   <Link href="/#contact">
                     <div
                       onClick={() => setNav(false)}
-                      className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                      className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 hover:bg-[#abc4b0] ease-in duration-300"
                     >
                       <AiOutlineMail />
                     </div>
@@ -194,9 +220,9 @@ const Navbar = () => {
                   <Link href="/#resume">
                     <div
                       onClick={() => setNav(false)}
-                      className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
+                      className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 hover:bg-[#abc4b0] ease-in duration-300"
                     >
-                      <BsFillPersonLinesFill />
+                      <BsFileText />
                     </div>
                   </Link>
                 </div>
