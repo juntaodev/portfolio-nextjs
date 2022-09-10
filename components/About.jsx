@@ -1,53 +1,49 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import AboutImg from "../public/assets/about.jpg";
 import Html from "../public/assets/skills/html.png";
 import Css from "../public/assets/skills/css.png";
 import Javascript from "../public/assets/skills/javascript.png";
 import ReactImg from "../public/assets/skills/react.png";
 import Tailwind from "../public/assets/skills/tailwind.png";
+import Typescript from "../public/assets/skills/typescript.png";
 import Github from "../public/assets/skills/github1.png";
 import Firebase from "../public/assets/skills/firebase.png";
+import Nodejs from "../public/assets/skills/nodejs.png";
+import Mongodb from "../public/assets/skills/mongodb.png";
 import NextJS from "../public/assets/skills/nextjs.png";
 
 const About = () => {
   return (
     <div
       id="about"
-      className="w-full h-full md:h-screen flex-row p-2 items-center py-16"
+      className="w-full h-full md:h-screen flex-row p-4 items-center py-32"
     >
       {/* about */}
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#618A6A]">
+          <h2 className="tracking-widest uppercase text-[#618A6A] py-4">
             About
-          </p>
-          <h2 className="py-4">Who I Am</h2>
+          </h2>
+
           <p className="py-2 text-gray-600">
             / / I am not your average developer
           </p>
           <p className="py-2 text-gray-600">
-            I have spent the last 12 years in the fire service working as a
-            professional firefighter/paramedic. I have always had a knack for
-            technology and working with computers. In 2019 I started working
-            with HTML and CSS to make some minor edits on a small business
-            website that I was operating. What I thought was just a few small
-            edits turned into a love for programming.
+            I have spent the last 8 years working as a professional SAT and GRE
+            teacher. Although far from tech world, I have always had a knack for
+            technology and working with computers. In 2017, I built my personal
+            blog using WordPress. I still remember the excitement when I finally
+            set up the website by myself .
           </p>
           <p className="py-2 text-gray-600">
-            Fascinated with how intricate programming can be I was quickly drawn
-            to learn more. I started learning javascript and was even more
-            enthused with making websites interactive. I then started
-            freelancing for e-commerce companies on the Shopify platform. I am
-            now spending my time building projects with React JS, Firebase, and
-            learning new technologies.
+            What I thought was just a side hustle turned into a longing for
+            further exploration into web development. I started learning html,
+            css and javascript and was even more enthused with responsive web
+            design. I then delved into the field of full stack development. I am
+            now spending my time building projects with React JS and Next JS and
+            constantly getting exposed to new technologies.
           </p>
-          <Link href="/#projects">
-            <p className="py-2 text-gray-600 underline cursor-pointer">
-              Check out some of my latest projects.
-            </p>
-          </Link>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image src={AboutImg} className="rounded-xl" alt="/" />
@@ -55,13 +51,15 @@ const About = () => {
       </div>
 
       {/* skills */}
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center">
-        <h2 className="py-4">What I Can Do</h2>
+      <div className="max-w-[1240px] mx-auto flex flex-col justify-center py-4">
+        <h2 className="tracking-widest uppercase text-[#618A6A] py-4">
+          skill set
+        </h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={Html} width="64px" height="64px" alt="/" />
+                <Image src={Html} width="64px" height="64px" alt="HtmlLogo" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>HTML</h3>
@@ -71,7 +69,7 @@ const About = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={Css} width="64px" height="64px" alt="/" />
+                <Image src={Css} width="64px" height="64px" alt="CssLogo" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>CSS</h3>
@@ -81,7 +79,12 @@ const About = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={Javascript} width="64px" height="64px" alt="/" />
+                <Image
+                  src={Javascript}
+                  width="64px"
+                  height="64px"
+                  alt="JavascriptLogo"
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>JavaScript</h3>
@@ -91,7 +94,12 @@ const About = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={ReactImg} width="64px" height="64px" alt="/" />
+                <Image
+                  src={ReactImg}
+                  width="64px"
+                  height="64px"
+                  alt="ReactLogo"
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>React</h3>
@@ -101,17 +109,58 @@ const About = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={Tailwind} width="64px" height="64px" alt="/" />
+                <Image
+                  src={NextJS}
+                  width="64px"
+                  height="64px"
+                  alt="NextjsLogo"
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Tailwind</h3>
+                <h3>Next.js</h3>
               </div>
             </div>
           </div>
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={Firebase} width="64px" height="64px" alt="/" />
+                <Image
+                  src={Tailwind}
+                  width="64px"
+                  height="64px"
+                  alt="TailwindLogo"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Tailwind</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image
+                  src={Typescript}
+                  width="64px"
+                  height="64px"
+                  alt="SanityLogo"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Typescript</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image
+                  src={Firebase}
+                  width="64px"
+                  height="64px"
+                  alt="FirebaseLogo"
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Firebase</h3>
@@ -121,20 +170,45 @@ const About = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={Github} width="64px" height="64px" alt="/" />
+                <Image
+                  src={Nodejs}
+                  width="64px"
+                  height="64px"
+                  alt="FirebaseLogo"
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Github</h3>
+                <h3>Node.js</h3>
               </div>
             </div>
           </div>
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={NextJS} width="64px" height="64px" alt="/" />
+                <Image
+                  src={Mongodb}
+                  width="64px"
+                  height="64px"
+                  alt="FirebaseLogo"
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Next</h3>
+                <h3>MongoDB</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image
+                  src={Github}
+                  width="64px"
+                  height="64px"
+                  alt="GithubLogo"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Github</h3>
               </div>
             </div>
           </div>
