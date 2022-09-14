@@ -45,11 +45,15 @@ const Main = () => {
                 <AiOutlineMail />
               </div>
             </Link>
-            <Link href="https://docs.google.com/document/d/1nMnzGJxx3eouOPPIpxvcE_NSONtf2Xwg/edit?usp=sharing&ouid=109590801400286731820&rtpof=true&sd=true">
+            <a
+              href="https://drive.google.com/file/d/10PQIuLv-ynemKI59N3aGCTZItu2EPCkz/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 hover:bg-[#abc4b0] hover:text-[Resume] ease-in duration-300">
                 <BsFileText />
               </div>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
