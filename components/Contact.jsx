@@ -7,7 +7,7 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full lg:h-screen">
+    <div id="contact" className="w-full min-h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-32 w-full ">
         <h2 className="tracking-widest uppercase text-[#618A6A] py-4">
           Contact

@@ -12,27 +12,31 @@ import Firebase from "../public/assets/skills/firebase.png";
 import Nodejs from "../public/assets/skills/nodejs.png";
 import Mongodb from "../public/assets/skills/mongodb.png";
 import NextJS from "../public/assets/skills/nextjs.png";
+import RubyOnRails from "../public/assets/skills/rubyonrails.png";
+import PostgreSQL from "../public/assets/skills/postgreSQL.png";
 
 const About = () => {
   return (
     <div
       id="about"
-      className="w-full h-full md:h-screen flex-row p-4 items-center py-32"
+      className="w-full min-h-screen"
     >
+      
       {/* about */}
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
+      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 px-4 pt-32">
         <div className="col-span-2">
           <h2 className="tracking-widest uppercase text-[#618A6A] py-4">
             About
           </h2>
 
           <p className="py-2 text-gray-600">
-            / / I am not your average developer
+            / / I am not your average developer.
           </p>
           <p className="py-2 text-gray-600">
-            I have spent the last 8 years working as a professional SAT and GRE
-            teacher. Although far from tech world, I have always had a knack for
-            technology and working with computers. In 2017, I built my personal
+            I have spent the last 8 years working as an English teacher, specializeing in 
+            scholastic tests such as SAT, ACT, GMAT and GRE. 
+            Although far from tech world, I have always had a knack for
+            technology and working with computers. In 2018, I built my personal
             blog using WordPress. I still remember the excitement when I finally
             set up the website by myself .
           </p>
@@ -40,18 +44,23 @@ const About = () => {
             What I thought was just a side hustle turned into a longing for
             further exploration into web development. I started learning html,
             css and javascript and was even more enthused with responsive web
-            design. I then delved into the field of full stack development. I am
-            now spending my time building projects with React JS and Next JS and
+            design. I then delved into the field of full stack development. 
+            I took my time to attend the bootcamp and successfully graduated from Lighthouse Labs.
+            I am now spending my time building projects with React JS and Next JS and
             constantly getting exposed to new technologies.
           </p>
+
+
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+
+
+        {/* <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image src={AboutImg} className="rounded-xl" alt="/" />
-        </div>
+        </div> */}
       </div>
 
       {/* skills */}
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center py-4">
+      <div className="max-w-[1240px] mx-auto flex flex-col justify-center py-8 px-4">
         <h2 className="tracking-widest uppercase text-[#618A6A] py-4">
           skill set
         </h2>
@@ -144,7 +153,7 @@ const About = () => {
                   src={Typescript}
                   width="64px"
                   height="64px"
-                  alt="SanityLogo"
+                  alt="TypescriptLogo"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -174,7 +183,7 @@ const About = () => {
                   src={Nodejs}
                   width="64px"
                   height="64px"
-                  alt="FirebaseLogo"
+                  alt="NodejsLogo"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -189,11 +198,41 @@ const About = () => {
                   src={Mongodb}
                   width="64px"
                   height="64px"
-                  alt="FirebaseLogo"
+                  alt="MongodbLogo"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>MongoDB</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image
+                  src={RubyOnRails}
+                  width="64px"
+                  height="64px"
+                  alt="RubyOnRailsLogo"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>RubyOnRails</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image
+                  src={PostgreSQL}
+                  width="64px"
+                  height="64px"
+                  alt="PostgreSQLLogo"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>PostgreSQL</h3>
               </div>
             </div>
           </div>
@@ -215,6 +254,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
