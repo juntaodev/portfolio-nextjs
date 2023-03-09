@@ -4,6 +4,7 @@ import ProjectItem from "./ProjectItem";
 import cryptoImg from "../public/assets/projects/crypto.jpg";
 import gearstoreImg from "../public/assets/projects/gearstore.png";
 import stockImg from "../public/assets/projects/stock101.png";
+import fruitcartImg from "../public/assets/projects/fruitcart.png";
 
 const Projects = () => {
   return (
@@ -20,10 +21,10 @@ const Projects = () => {
             tech="React"
           />
           <ProjectItem
-            title="Ecommerce App"
-            backgroundImg={gearstoreImg}
-            projectUrl="/ecommerce"
-            tech="Next JS"
+            title="Buy/Sale Listing App"
+            backgroundImg={fruitcartImg}
+            projectUrl="/fruitcart"
+            tech="JavaScript/EJS"
           />
           <ProjectItem
             title="Ecommerce App"
