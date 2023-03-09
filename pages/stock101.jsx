@@ -74,6 +74,10 @@ const stock101 = () => {
               <p className="text-gray-600 p-2 flex items-center">
                 <RiRadioButtonFill className="pr-2" /> Twelve Data API
               </p>
+              <p className="text-gray-600 p-2 flex items-center">
+                <RiRadioButtonFill className="pr-2" /> axios
+              </p>
+              
             </div>
           </div>
         </div>
