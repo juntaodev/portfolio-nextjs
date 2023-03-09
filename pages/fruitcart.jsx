@@ -17,7 +17,7 @@ const fruitcart = () => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1280px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Stock 101</h2>
+          <h2 className="py-2">Fruit Cart</h2>
           <h3>Html / SASS / EJS / PostgreSQL</h3>
         </div>
       </div>
