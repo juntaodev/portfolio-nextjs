@@ -14,6 +14,7 @@ import Mongodb from "../public/assets/skills/mongodb.png";
 import NextJS from "../public/assets/skills/nextjs.png";
 import RubyOnRails from "../public/assets/skills/rubyonrails.png";
 import PostgreSQL from "../public/assets/skills/postgreSQL.png";
+import Jest from "../public/assets/skills/jest.png";
 
 const About = () => {
   return (
@@ -248,6 +249,21 @@ const About = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Github</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image
+                  src={Jest}
+                  width="64px"
+                  height="64px"
+                  alt="GithubLogo"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Jest</h3>
               </div>
             </div>
           </div>
