@@ -18,7 +18,7 @@ const fruitcart = () => {
         />
         <div className="absolute top-[70%] max-w-[1280px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Fruit Cart</h2>
-          <h3>Html / SASS / EJS / PostgreSQL</h3>
+          <h3>Javascript / SASS / EJS / PostgreSQL</h3>
         </div>
       </div>
 
@@ -27,16 +27,29 @@ const fruitcart = () => {
           
           <h2>Overview</h2>
           <p>
-            Most existing stock related websites or applications are either trading platforms or information providers. One of their common grounds is that they are all loaded with intimidating jargons which baffle non-professional investors. Stock 101 is a project that meant to help amatuer stock investors set foot in stock investments. The most important feature of Stock 101 is that we add beginner-friendly yet comprehensive explanations to every term that users may encounter in our app. We name it "Educational Clickable". We also add a metric system to evaluate the business of a company by introducing four tables reflecting business growth, profitability, management efficiency and financial health respectively. Five years of historical financial statements of the business are also provided for easy access and easy analysis.
+            Fruit Cart is a brightly designed buy/sell listing app. Features included: <br />
+            <strong>Customers can</strong>  <br />
+            - Browse fruit listings and view detailed information including price, description, and image <br />
+            - Mark fruit listings as favourite that show up in their favourites page <br />
+            - Add fruit to their shopping cart <br />
+            - Click more info to view a popup that shows a second functional add to cart button and email seller button <br />
+            - Contact the seller via an email form <br />
+            - Filter fruit by price and date listed <br />
+            <strong>Admin can</strong>  <br />
+            - Post new listings of fruit <br />
+            - Remove listings of fruit <br />
+            - Mark fruit as sold two ways: the main page and the more information popup <br />
+            - Receive emails sent by customers <br />
+
           </p>
           <p className="py-2 font-semibold">
             What I accomplished from this project:
           </p>
           <p className="py-2">
-            - Advanced React folder and file structure, hooks, and refs <br />
-            - Overall wireframe build and UX design from user story  <br />
-            - Data fetch and utilization powered by Alpha Vantage API and TwelveData API <br />
-            - Responsive design with Daisy UI integrated with Tailwind CSS <br />
+            - ERD design and database design using draw.io and PostgreSQL<br />
+            - UI/UX design and Responsive web design using Sass and Tailwind <br />
+            - Main function implementation using Javascript and EJS <br />
+            - Collaborative version control using github <br />
             
           </p>
           <a
