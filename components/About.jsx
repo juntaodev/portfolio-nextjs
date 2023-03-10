@@ -12,9 +12,10 @@ import Firebase from "../public/assets/skills/firebase.png";
 import Nodejs from "../public/assets/skills/nodejs.png";
 import Mongodb from "../public/assets/skills/mongodb.png";
 import NextJS from "../public/assets/skills/nextjs.png";
-import RubyOnRails from "../public/assets/skills/rubyonrails.png";
-import PostgreSQL from "../public/assets/skills/postgreSQL.png";
-import Jest from "../public/assets/skills/jest.png";
+import RubyOnRails from "../public/assets/skills/rubyonrails.svg";
+import PostgreSQL from "../public/assets/skills/postgres.svg";
+import Jest from "../public/assets/skills/jest.svg";
+import Storybook from "../public/assets/skills/storybook.svg";
 
 const About = () => {
   return (
@@ -229,7 +230,7 @@ const About = () => {
                   src={PostgreSQL}
                   width="64px"
                   height="64px"
-                  alt="PostgreSQLLogo"
+                  alt="PostgresLogo"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -259,7 +260,7 @@ const About = () => {
                   src={Jest}
                   width="64px"
                   height="64px"
-                  alt="GithubLogo"
+                  alt="JestLogo"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -267,6 +268,22 @@ const About = () => {
               </div>
             </div>
           </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image
+                  src={Storybook}
+                  width="64px"
+                  height="64px"
+                  alt="StorybookLogo"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Storybook</h3>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
