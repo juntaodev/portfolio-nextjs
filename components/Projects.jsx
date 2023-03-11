@@ -1,7 +1,7 @@
 import React from "react";
 
 import ProjectItem from "./ProjectItem";
-import cryptoImg from "../public/assets/projects/crypto.jpg";
+import cryptoImg from "../public/assets/projects/cryptobase.png";
 import schedulerImg from "../public/assets/projects/scheduler.png";
 import stockImg from "../public/assets/projects/stock101.png";
 import fruitcartImg from "../public/assets/projects/fruitcart.png";
