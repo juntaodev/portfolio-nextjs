@@ -2,7 +2,7 @@ import React from "react";
 
 import ProjectItem from "./ProjectItem";
 import cryptoImg from "../public/assets/projects/crypto.jpg";
-import gearstoreImg from "../public/assets/projects/gearstore.png";
+import schedulerImg from "../public/assets/projects/scheduler.png";
 import stockImg from "../public/assets/projects/stock101.png";
 import fruitcartImg from "../public/assets/projects/fruitcart.png";
 
@@ -27,10 +27,10 @@ const Projects = () => {
             tech="JavaScript/EJS"
           />
           <ProjectItem
-            title="Ecommerce App"
-            backgroundImg={gearstoreImg}
-            projectUrl="/ecommerce"
-            tech="Next JS"
+            title="Scheduler App"
+            backgroundImg={schedulerImg}
+            projectUrl="/scheduler"
+            tech="React"
           />
           <ProjectItem
             title="Crypto App"
