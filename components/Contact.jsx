@@ -54,7 +54,7 @@ const Contact = () => {
                   </Link>
 
                   <a
-                    href="https://drive.google.com/file/d/18i409bFck7u0vsFvhDkAF1HNArXmzE_q/view?usp=sharing"
+                    href="https://docs.google.com/document/d/1E_a4Ik0Y6cugliD78x0Y5lFMtuXMb12pkfSnoPJZ7pU/edit?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                   >
