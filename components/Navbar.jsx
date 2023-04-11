@@ -16,10 +16,10 @@ const Navbar = () => {
 
   useEffect(() => {
     if (
-      router.asPath === "/ecommerce" ||
-      router.asPath === "/crypto" ||
-      router.asPath === "/twitch" ||
-      router.asPath === "/bugtracker"
+      router.asPath === "/stock101" ||
+      router.asPath === "/fruitcart" ||
+      router.asPath === "/scheduler" ||
+      router.asPath === "/crypto"
     ) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
